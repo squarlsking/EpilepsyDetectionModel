@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+env/
+venv/
+ENV/
+
+# 模型和数据
+models/*.pkl
+models/*.pth
+models/**/*.pkl       # 子目录中的模型文件
+models/**/*.pth
+*.h5
+*.pth
+*.ckpt
+data/raw/             # 原始 BIDS 数据集（太大，不要提交！）
+data/processed/       # 处理后的数据（可以重新生成）
+!data/processed/.gitkeep  # 但保留目录结构
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 输出
+output/
+*.log
+*.png
+*.jpg
+Sample_Annotations/
+
+# 临时文件
+*.tmp
+*.bak
+*.old
+
+# C编译产物
+*.o
+*.dll
+*.so
+*.dylib
+*.exe
